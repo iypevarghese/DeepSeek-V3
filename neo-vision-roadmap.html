@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neo Vision Strategic Roadmap 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap");
+
+      body {
+        font-family: "Space Grotesk", sans-serif;
+        background-color: #0f111a;
+        color: #e2e8f0;
+      }
+
+      .glass-panel {
+        background: rgba(30, 41, 59, 0.5);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1.5rem;
+      }
+
+      .chart-container {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        height: 320px;
+        max-height: 400px;
+      }
+
+      .text-gradient {
+        background: linear-gradient(135deg, #a855f7, #22d3ee);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* VIBRANT PALETTE SELECTION: "Electric Amethyst & Cyber Teal"
+         Primary (Purple): #A855F7
+         Secondary (Teal): #22D3EE
+         Accent (Gold): #F59E0B
+         Success (Emerald): #10B981
+      */
+
+      /* CONFIRMATION: NO SVG used. NO Mermaid JS used.
+         All visuals rendered via Canvas or Tailwind CSS structures. */
+    </style>
+  </head>
+  <body class="p-6 md:p-12 lg:p-20">
+    <!-- Header Section -->
+    <header class="max-w-6xl mx-auto mb-20">
+      <div class="flex flex-col md:flex-row justify-between items-end gap-6">
+        <div class="max-w-2xl">
+          <span class="text-teal-400 font-bold tracking-widest uppercase text-xs"
+            >Implementation Phase 01</span
+          >
+          <h1 class="text-5xl md:text-7xl font-black mt-2 mb-6">
+            Strategic <span class="text-gradient">Recovery</span>
+          </h1>
+          <p class="text-slate-400 text-lg leading-relaxed">
+            Following the January 2026 audit, we are transitioning from data insight
+            to operational execution. This roadmap outlines the four core pillars
+            of the Neo Vision recovery strategy designed to achieve a
+            <strong class="text-white">95% patient connection rate.</strong>
+          </p>
+        </div>
+        <div class="glass-panel p-6 border-l-4 border-teal-400">
+          <p class="text-xs text-slate-500 uppercase font-bold mb-1">
+            Projected ROI
+          </p>
+          <div class="text-4xl font-black text-white">+₹3.2L</div>
+          <p class="text-[10px] text-teal-400 mt-1 uppercase">
+            Monthly Rev Recovery
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section 1: The Automation Pillar -->
+    <section class="max-w-6xl mx-auto mb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="chart-container">
+          <canvas id="wabaImpactChart"></canvas>
+        </div>
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <span class="text-4xl">🤖</span>
+            <h2 class="text-3xl font-bold">WABA "Schedule Bot" Deployment</h2>
+          </div>
+          <p class="text-slate-400 leading-relaxed">
+            With <strong class="text-white">62% of drop-offs</strong> occurring
+            in the Appointment IVR, we are deploying an automated WhatsApp
+            Business API (WABA) solution. By integrating a 24/7 chatbot, we
+            provide an immediate alternative for patients who cannot wait in the
+            voice queue.
+          </p>
+          <div class="glass-panel p-5 bg-teal-500/5">
+            <p class="font-bold text-teal-400">The "Press 9" Logic</p>
+            <p class="text-sm italic text-slate-300 mt-2">
+              "Your wait time is 45 seconds. Press 9 to receive a secure booking
+              link via WhatsApp instantly."
+            </p>
+          </div>
+          <p class="text-xs text-slate-500 font-medium">
+            * Visualization: Current Loss vs. Predicted Recovery using WhatsApp
+            Automation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Workforce Precision -->
+    <section class="max-w-6xl mx-auto mb-24">
+      <div class="glass-panel p-10">
+        <div class="mb-10 text-center md:text-left">
+          <h2 class="text-3xl font-bold mb-4">
+            Precision Staffing: The "Bridge Shift"
+          </h2>
+          <p class="text-slate-400 max-w-3xl">
+            Our data confirms that fixed shifts fail to manage the 10 AM – 2 PM
+            peak. We are realigning agent schedules to ensure
+            <strong class="text-white">100% occupancy</strong> during these
+            critical four hours, specifically targeting the Monday/Tuesday
+            morning surge.
+          </p>
+        </div>
+
+        <div class="chart-container md:col-span-2 mb-8">
+          <canvas id="staffingOptimizationChart"></canvas>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-slate-700 pt-8">
+          <div>
+            <h4 class="font-bold text-teal-400 mb-2">Morning Peak Alignment</h4>
+            <p class="text-sm text-slate-400">
+              Shift transition now occurs at 2 PM rather than 12 PM to prevent
+              "Agent Gap" during the busiest window.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold text-purple-400 mb-2">
+              Bridge Shift Implementation
+            </h4>
+            <p class="text-sm text-slate-400">
+              A dedicated 4-hour micro-shift covering 10:00 AM to 2:00 PM will
+              handle the "High Variance" volume.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: The Retention Safety Net -->
+    <section class="max-w-6xl mx-auto mb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 order-2 lg:order-1">
+          <div class="flex items-center gap-4">
+            <span class="text-4xl">📞</span>
+            <h2 class="text-3xl font-bold">Intelligent Queue Callbacks</h2>
+          </div>
+          <p class="text-slate-400 leading-relaxed">
+            Patients reach their "patience cliff" at 45 seconds. By offering a
+            <strong class="text-white">Queue Callback at the 30-second mark</strong>,
+            we retain the patient relationship even if we cannot answer
+            immediately.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-sm">
+              <span class="text-teal-400">✔</span> Reduces abandonment by 40%
+              (estimated)
+            </li>
+            <li class="flex items-center gap-3 text-sm">
+              <span class="text-teal-400">✔</span> Eliminates "Normal Clearing"
+              drop-offs
+            </li>
+            <li class="flex items-center gap-3 text-sm">
+              <span class="text-teal-400">✔</span> Prioritizes callbacks for
+              surgical patients
+            </li>
+          </ul>
+        </div>
+        <div class="chart-container order-1 lg:order-2">
+          <canvas id="callbackRetentionChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Process Transformation Diagram -->
+    <section class="max-w-6xl mx-auto mb-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">The Optimized Patient Journey</h2>
+        <p class="text-slate-400">
+          Transitioning from a leaky funnel to a closed-loop retention system.
+        </p>
+      </div>
+
+      <!-- HTML/CSS Flowchart (No SVG, No Mermaid) -->
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+        <div class="glass-panel p-6 w-full md:w-56 text-center border-b-4 border-indigo-500">
+          <p class="text-xs uppercase font-bold text-indigo-400 mb-1">Entry</p>
+          <p class="font-bold">Smartflo IVR</p>
+        </div>
+        <div class="hidden md:block text-slate-600">➔</div>
+        <div class="glass-panel p-6 w-full md:w-56 text-center border-b-4 border-teal-400">
+          <p class="text-xs uppercase font-bold text-teal-400 mb-1">30s Mark</p>
+          <p class="font-bold text-sm">Auto-Callback Offer</p>
+        </div>
+        <div class="hidden md:block text-slate-600">➔</div>
+        <div class="glass-panel p-6 w-full md:w-56 text-center border-b-4 border-emerald-500">
+          <p class="text-xs uppercase font-bold text-emerald-400 mb-1">Recovery</p>
+          <p class="font-bold text-sm">WABA Booking</p>
+        </div>
+        <div class="hidden md:block text-slate-600">➔</div>
+        <div class="glass-panel p-6 w-full md:w-56 text-center border-b-4 border-amber-500">
+          <p class="text-xs uppercase font-bold text-amber-400 mb-1">Final Outcome</p>
+          <p class="font-bold text-sm">Resolved Case</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="max-w-6xl mx-auto text-center py-12 border-t border-slate-800">
+      <p class="text-slate-500 text-sm">
+        Strategy Document: Neo Vision 2026 Optimization
+      </p>
+      <p class="text-slate-600 text-xs mt-2 uppercase tracking-widest font-bold">
+        Smartflo Operations Admin • Confidential
+      </p>
+    </footer>
+
+    <script>
+      // --- Label Wrapping Function (>16 chars) ---
+      function wrapLabel(label, max = 16) {
+        if (label.length <= max) return label;
+        const words = label.split(" ");
+        const lines = [];
+        let current = words[0];
+        for (let i = 1; i < words.length; i += 1) {
+          if ((current + " " + words[i]).length <= max) {
+            current += " " + words[i];
+          } else {
+            lines.push(current);
+            current = words[i];
+          }
+        }
+        lines.push(current);
+        return lines;
+      }
+
+      // Global Chart Defaults
+      Chart.defaults.color = "#94A3B8";
+      Chart.defaults.font.family = "'Space Grotesk', sans-serif";
+
+      const tooltipConfig = {
+        backgroundColor: "rgba(15, 17, 26, 0.95)",
+        padding: 12,
+        borderColor: "rgba(255, 255, 255, 0.1)",
+        borderWidth: 1,
+        titleFont: { size: 14, weight: "bold" },
+        bodyFont: { size: 13 },
+        callbacks: {
+          title(tooltipItems) {
+            const item = tooltipItems[0];
+            const label = item.chart.data.labels[item.dataIndex];
+            return Array.isArray(label) ? label.join(" ") : label;
+          },
+        },
+      };
+
+      // 1. WABA Impact Chart (Donut)
+      const wabaCtx = document.getElementById("wabaImpactChart").getContext("2d");
+      new Chart(wabaCtx, {
+        type: "doughnut",
+        data: {
+          labels: [wrapLabel("Recovered via WhatsApp"), wrapLabel("Remaining Voice Abandonment")],
+          datasets: [
+            {
+              data: [70, 30],
+              backgroundColor: ["#22D3EE", "#1E293B"],
+              borderColor: "#0F111A",
+              borderWidth: 6,
+              hoverOffset: 10,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: "75%",
+          plugins: {
+            legend: { position: "bottom", labels: { padding: 20 } },
+            tooltip: tooltipConfig,
+          },
+        },
+      });
+
+      // 2. Staffing Optimization Chart (Stacked Bar)
+      const staffingCtx = document
+        .getElementById("staffingOptimizationChart")
+        .getContext("2d");
+      new Chart(staffingCtx, {
+        type: "bar",
+        data: {
+          labels: ["8 AM", "9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM"],
+          datasets: [
+            {
+              label: wrapLabel("Base Shift Capacity"),
+              data: [5, 5, 5, 5, 5, 5, 5, 5, 5],
+              backgroundColor: "#1E293B",
+              borderRadius: 4,
+            },
+            {
+              label: wrapLabel("New Bridge Shift (10 AM-2 PM)"),
+              data: [0, 0, 4, 4, 4, 4, 0, 0, 0],
+              backgroundColor: "#A855F7",
+              borderRadius: 4,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              stacked: true,
+              beginAtZero: true,
+              grid: { color: "rgba(255,255,255,0.05)" },
+              title: { display: true, text: "Active Agents" },
+            },
+            x: { stacked: true, grid: { display: false } },
+          },
+          plugins: {
+            legend: { position: "top" },
+            tooltip: tooltipConfig,
+          },
+        },
+      });
+
+      // 3. Callback Retention Chart (Line)
+      const callbackCtx = document
+        .getElementById("callbackRetentionChart")
+        .getContext("2d");
+      new Chart(callbackCtx, {
+        type: "line",
+        data: {
+          labels: ["0s", "15s", "30s (Trigger)", "45s (Cliff)", "60s", "90s"],
+          datasets: [
+            {
+              label: wrapLabel("Current Abandonment %"),
+              data: [2, 10, 18, 62, 85, 95],
+              borderColor: "#EF4444",
+              borderDash: [5, 5],
+              borderWidth: 2,
+              tension: 0.3,
+            },
+            {
+              label: wrapLabel("Post-Callback Strategy %"),
+              data: [2, 8, 12, 14, 15, 16],
+              borderColor: "#10B981",
+              backgroundColor: "rgba(16, 185, 129, 0.1)",
+              fill: true,
+              borderWidth: 4,
+              tension: 0.3,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              grid: { color: "rgba(255,255,255,0.05)" },
+              ticks: { callback: (value) => `${value}%` },
+            },
+            x: { grid: { display: false } },
+          },
+          plugins: {
+            legend: { position: "bottom" },
+            tooltip: tooltipConfig,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
